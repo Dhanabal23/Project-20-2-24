@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Backdrop Properties</h1>
+    <div class="container">
+        <div class="childcontainer">
+            <h2>Backdrop</h2>
+            <button type="submit" onclick="openbackdrop()">button</button>
+        </div>
+    </div>
+    <dialog>
+        
+        hi
+        
+    </dialog>
+</body>
+</html>
+
+<script>
+    function openbackdrop(){
+        var dialog=document.queryselection('dialog');
+        dialog.showmodal();
+    }
+</script>
+
+<style>
+
+</style>

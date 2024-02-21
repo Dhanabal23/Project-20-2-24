@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Flex Properties in CSS</h1>
+    <div class="main">
+        <div>hello</div>
+        <div>World</div>
+        <div>Hello world</div>
+    </div>
+    <h1> Flex Wrap</h1>
+    <div class="maincontainer">
+        <div>hello</div>
+        <div>World</div>
+        <div>Hello world</div>
+    </div>
+    <h1>  Wrap Reverse</h1>
+    <div class="wrap">
+        <div>hello</div>
+        <div>World</div>
+        <div>Hello world</div>
+        <div>Hello world</div>
+        <div>hello</div>
+        <div>World</div>
+    </div>
+
+<h1>Flow-Reverse</h1>
+    <div class="numbers">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h1>Align-Items</h1>
+    <div class="Align">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+      
+</body>
+</html>
+
+<style>
+    /* Flex-direction
+    row
+    row-reverse
+    column
+    column-reverse*/
+
+    h1{
+        text-align: center;
+    }
+    
+.main{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main div{
+background-color: rgb(23, 189, 106);
+color: white;
+padding: 30px 30px;
+margin: 30px 30px;
+}
+
+.maincontainer{
+    display: flex;
+    background-color:dodgerblue;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.maincontainer div{
+    background-color:aliceblue;
+    color: black;
+    padding: 30px 30px;
+    margin: 30px 30px;
+}
+
+.wrap{
+    display: flex;
+    background-color: darkmagenta;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.wrap div{
+    background-color: white;
+    padding: 30px 30px;
+    margin: 30px 30px;
+}
+.numbers{
+    display: flex;
+    background-color: lightseagreen;
+    flex-flow: row-reverse;
+    justify-content: center;
+}
+
+.numbers div{
+    background-color: aliceblue;
+    padding: 30px 30px;
+    margin: 30px 30px;
+}
+
+.Align{
+    display: flex;
+    background-color: yellow;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100px;
+    /* align-items: center; */
+}
+
+.Align div{
+    background-color: rgb(1, 4, 7);
+    color: white;
+    padding: 30px 30px;    margin: 30px 30px;
+    /* align-items: center; */
+}
+
+</style>
